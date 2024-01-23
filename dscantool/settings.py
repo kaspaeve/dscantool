@@ -16,13 +16,13 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # The site name
-DSCAN_SITE_NAME = os.environ.get('DSCAN_SITE_NAME', "Nimos' Intel Tools")
+DSCAN_SITE_NAME = os.environ.get('DSCAN_SITE_NAME', "Original Sinners Intel Tools")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DSCAN_SECRET_KEY', '&f8lk5k-b$^)-sdfij8gu9df7g9aa2zagdfh8iooijioukhrs_')
+SECRET_KEY = os.environ.get('DSCAN_SECRET_KEY', 'NwSfAZAquZ8Lhjdl2ujWmr_pdviy1k-Z')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -172,4 +172,4 @@ DSCAN_ZKILLBOARD_URL = os.environ.get('DSCAN_ZKILLBOARD_URL', 'https://zkillboar
 
 DSCAN_DOTLAN_URL = os.environ.get('DSCAN_DOTLAN_URL', 'https://evemaps.dotlan.net')
 
-DSCAN_FEEDBACK = os.environ.get('DSCAN_FEEDBACK', 'Brought to you by Nimos Endashi • Discord: Nimos#4951')
+DSCAN_FEEDBACK = os.environ.get('DSCAN_FEEDBACK', 'Managed by kaspa101 • Discord: .kaspa.')
