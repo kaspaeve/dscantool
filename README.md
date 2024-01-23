@@ -25,6 +25,7 @@ Note: Nimos' Intel Tool pulls all missing type information from ESI when needed.
 ## Docker installation
 
 Nginx Configuration `/portainer/Files/AppData/Config/dscan/nginx/dscan.conf`:
+
 `server {
     listen 80;
     server_name dscan.localdomain;
