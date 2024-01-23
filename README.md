@@ -22,7 +22,7 @@ Note: Nimos' Intel Tool pulls all missing type information from ESI when needed.
 2. Extract `groupIDs.yaml` and `typeIDs.yaml` from the SDE into `eve_data`
 3. Run `python manage.py import_sde`
 
-## Docker installation
+## Portainer Docker installation
 
 Nginx Configuration `/portainer/Files/AppData/Config/dscan/nginx/dscan.conf`:
 
