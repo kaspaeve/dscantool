@@ -26,19 +26,21 @@ Note: Nimos' Intel Tool pulls all missing type information from ESI when needed.
 
 Nginx Configuration `/portainer/Files/AppData/Config/dscan/nginx/dscan.conf`:
 
-`server {
-    listen 80;
-    server_name dscan.localdomain;
 
-    location / {
-        proxy_pass http://dscan:8000;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
+
+    server {
+        listen 80;
+        server_name dscan.localdomain;
+
+        location / {
+            proxy_pass http://dscan:8000;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
     }
-}
-`
+
 
 ### Environment Variables
 
