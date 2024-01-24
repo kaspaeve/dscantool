@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DSCAN_SECRET_KEY', 'NwSfAZAquZ8Lhjdl2ujWmr_pdviy1k-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [os.environ.get('DSCAN_ALLOWED_HOST', 'dscan.nimos.ws')]
+ALLOWED_HOSTS = [os.environ.get('DSCAN_ALLOWED_HOST', 'dscan.originalsinners.org')]
 
 
 # Application definition
