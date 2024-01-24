@@ -23,9 +23,9 @@ services:
     container_name: dscan
     restart: always
     environment:
-      - DSCAN_ALLOWED_HOST=dscan.localdomain
+      - DSCAN_ALLOWED_HOST=192.168.1.14, dscan.localdomain,https://dscan.originalsinners.org/
       - DSCAN_DB_HOST=dscan_postgres
-      - ALLOWED_HOSTS=192.168.1.14,dscan.localdomain
+      - ALLOWED_HOSTS=192.168.1.14,dscan.localdomain,https://dscan.originalsinners.org/
     volumes:
       - /portainer/Files/AppData/Config/dscan/dscantool/static:/dscantool/static
     depends_on:
